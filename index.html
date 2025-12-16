@@ -1,103 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Deokhwa Jeong</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
 <body>
-  <div class="container">
+  <!-- Top header (same vibe as Sejoonoh: name left, tabs right) -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./">Deokhwa Jeong</a>
+      <nav class="topnav" aria-label="Primary">
+        <a class="navlink active" href="./">About</a>
+        <a class="navlink" href="./projects.html">Projects</a>
+        <a class="navlink" href="./resume.html">CV / Resume</a>
+        <a class="navlink" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Page layout -->
+  <main class="layout">
     <!-- LEFT SIDEBAR -->
     <aside class="sidebar">
-      <img src="assets/profile.jpg" alt="Deokhwa Jeong" class="profile-img" />
+      <div class="avatar-wrap">
+        <!-- 1) 여기 사진 파일 경로만 맞추면 됨: /assets/profile.jpg -->
+        <img class="avatar" src="./assets/profile.jpg" alt="Deokhwa Jeong" />
+      </div>
 
-      <h1 class="name">Deokhwa Jeong</h1>
-      <p class="title">Software Engineer<br/>Technical Project Manager</p>
+      <div class="side-name">Deokhwa Jeong</div>
+      <div class="side-role">Embedded &amp; Software Engineer,<br/>Technical Project Manager (PMP)</div>
 
-      <p class="location">Cupertino, CA</p>
+      <div class="side-meta">
+        <div class="meta-row">
+          <span class="meta-icon" aria-hidden="true">📍</span>
+          <span>Cupertino, CA</span>
+        </div>
+        <div class="meta-row">
+          <span class="meta-icon" aria-hidden="true">🎓</span>
+          <span>Incoming M.S. (MSSM), CMU</span>
+        </div>
+      </div>
 
-      <ul class="links">
-        <li><a href="mailto:your@email.com">Email</a></li>
-        <li><a href="https://github.com/deokhwajeong" target="_blank">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a></li>
-      </ul>
+      <div class="side-links" aria-label="Profile links">
+        <!-- 너 링크로 바꿔 -->
+        <a class="sidelink" href="mailto:deokhwa@gmail.com">Email</a>
+        <a class="sidelink" href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="sidelink" href="https://github.com/deokhwajeong" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </aside>
 
-    <!-- MAIN CONTENT -->
-    <main class="content">
+    <!-- RIGHT CONTENT -->
+    <section class="content">
+      <h1 class="h1">About me</h1>
 
-      <!-- TOP NAV -->
-      <nav class="top-nav">
-        <a class="active" href="index.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+      <!-- Sejoonoh 스타일: bullet + 파란 링크 -->
+      <ul class="bullets">
+        <li>
+          I am an embedded/software engineer and technical project manager with 10+ years of industry experience at
+          <a href="https://www.lg.com" target="_blank" rel="noreferrer">LG Electronics</a>,
+          building and operating large-scale Smart TV platforms and global OTT integrations.
+        </li>
+        <li>
+          My work focused on platform execution, cross-functional delivery, and translating product, policy, and regional requirements into stable system behavior across 50+ countries.
+        </li>
+        <li>
+          I have led and partnered closely with engineering, product, legal, and operations teams, especially in areas involving analytics, privacy compliance (e.g., GDPR/CCPA), and service operations.
+        </li>
+        <li>
+          My early career started in biological research, where I developed Java-based 3D reconstruction tools for cellular imaging using TEM/HVEM and volume rendering workflows.
+        </li>
+        <li>
+          I am preparing to begin the
+          <a href="https://www.cmu.edu/" target="_blank" rel="noreferrer">Carnegie Mellon University</a>
+          <a href="https://engineering.cmu.edu/" target="_blank" rel="noreferrer">College of Engineering</a>
+          MSSM program, strengthening my foundation in software systems, technical leadership, and product decision-making.
+        </li>
+      </ul>
 
-      <!-- ABOUT -->
-      <section>
-        <h2>About me</h2>
-        <ul>
-          <li>
-            I am a software engineer and technical project manager with over 10 years of experience
-            building and operating large-scale Smart TV platforms at
-            <a href="https://www.lg.com" target="_blank">LG Electronics</a>.
-          </li>
-          <li>
-            My work has focused on platform execution, global
-            <a href="https://en.wikipedia.org/wiki/Over-the-top_media_service" target="_blank">OTT</a>
-            service operations, and translating product, policy, and regional requirements into
-            stable system behavior across more than 50 countries.
-          </li>
-          <li>
-            I have worked closely with cross-functional teams spanning engineering, product, legal,
-            and operations, particularly in areas involving analytics, data usage, and
-            <a href="https://oag.ca.gov/privacy/ccpa" target="_blank">privacy compliance</a>.
-          </li>
-          <li>
-            I am preparing to begin the
-            <a href="https://www.cmu.edu/engineering/" target="_blank">
-              Master of Science in Software Management (MSSM)
-            </a>
-            program at Carnegie Mellon University to strengthen my foundation in software systems,
-            product decision-making, and technical leadership.
-          </li>
-          <li>
-            My current interests center on platform-oriented roles at the intersection of
-            engineering execution, data-informed decision making, and responsible system design.
-          </li>
-        </ul>
-      </section>
+      <h2 class="h2">What I work on</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-title">Smart TV platforms (LG Electronics)</div>
+          <div class="card-body">
+            Platform delivery, global OTT service operations, data-informed UX improvements, and privacy/compliance implementation at scale.
+          </div>
+          <div class="card-links">
+            <!-- 필요하면 링크 넣기 -->
+            <a href="./projects.html#lg" class="inline-link">See projects</a>
+          </div>
+        </article>
 
-      <!-- WHAT I'VE WORKED ON -->
-      <section>
-        <h2>What I’ve worked on</h2>
-        <ul>
-          <li>
-            Global Smart TV platform development and operations supporting Netflix, YouTube,
-            Amazon Prime Video, and regional OTT partners.
-          </li>
-          <li>
-            Data analytics pipelines using
-            <a href="https://marketingplatform.google.com/about/analytics/" target="_blank">
-              Google Analytics
-            </a>
-            and internal dashboards to support product and operational decisions.
-          </li>
-          <li>
-            Privacy and compliance initiatives aligned with
-            <a href="https://gdpr.eu/" target="_blank">GDPR</a>
-            and
-            <a href="https://oag.ca.gov/privacy/ccpa" target="_blank">CCPA</a>
-            requirements.
-          </li>
-        </ul>
-      </section>
+        <article class="card">
+          <div class="card-title">AI + data-driven personal projects</div>
+          <div class="card-body">
+            Side projects exploring data pipelines, lightweight ML prototypes, and product-oriented engineering.
+          </div>
+          <div class="card-links">
+            <a href="./projects.html#personal" class="inline-link">See projects</a>
+          </div>
+        </article>
 
-    </main>
-  </div>
+        <article class="card">
+          <div class="card-title">Engineering × product execution</div>
+          <div class="card-body">
+            I’m interested in roles that sit at the intersection of engineering execution, data-informed decision making, and responsible system design.
+          </div>
+          <div class="card-links">
+            <a href="./contact.html" class="inline-link">Get in touch</a>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="h2">Quick links</h2>
+      <ul class="bullets">
+        <li><a class="inline-link" href="./projects.html">Projects</a></li>
+        <li>
+          <a class="inline-link" href="./resume.html">CV / Resume</a>
+          <span class="muted">(PDF link will appear once you upload it under /assets/)</span>
+        </li>
+        <li><a class="inline-link" href="./contact.html">Contact</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Small footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="muted">© <span id="y"></span> Deokhwa Jeong</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
