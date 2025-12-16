@@ -4,112 +4,83 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deokhwa Jeong</title>
-  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
   <div class="page">
-    <!-- LEFT SIDEBAR -->
-    <aside class="sidebar">
-      <div class="brand">
-        <a class="brand-name" href="/index.html">Deokhwa Jeong</a>
-        <nav class="topnav" aria-label="Primary">
-          <a class="navlink active" href="/index.html">About</a>
-          <a class="navlink" href="/projects.html">Projects</a>
-          <a class="navlink" href="/resume.html">CV / Resume</a>
-          <a class="navlink" href="/contact.html">Contact</a>
+    <!-- Top nav (same across pages) -->
+    <header class="topnav">
+      <div class="topnav-inner">
+        <a class="brand" href="index.html">Deokhwa Jeong</a>
+        <nav class="nav">
+          <a class="nav-link active" href="index.html">About</a>
+          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="resume.html">CV / Resume</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </nav>
       </div>
+    </header>
 
-      <div class="profile">
+    <main class="layout">
+      <!-- Left sidebar -->
+      <aside class="sidebar">
         <div class="avatar-wrap">
-          <img class="avatar" src="/assets/profile.jpg" alt="Deokhwa Jeong" />
+          <img class="avatar" src="assets/profile.jpg" alt="Deokhwa Jeong" />
         </div>
 
-        <div class="profile-text">
-          <div class="name">Deokhwa Jeong</div>
-          <div class="role">Embedded &amp; Software Engineer</div>
-          <div class="role">Technical Project Manager (PMP)</div>
-
-          <div class="meta">
-            <div class="meta-item">
-              <span class="meta-ico" aria-hidden="true">📍</span>
-              <span>Cupertino, CA</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-ico" aria-hidden="true">🎓</span>
-              <span>Incoming M.S. (MSSM), CMU</span>
-            </div>
-          </div>
-
-          <div class="linklist">
-            <a href="mailto:deokhwa@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://github.com/deokhwajeong" target="_blank" rel="noopener">GitHub</a>
-          </div>
+        <div class="side-name">Deokhwa Jeong</div>
+        <div class="side-title">
+          Embedded &amp; Software Engineer<br/>
+          Technical Project Manager (PMP)
         </div>
-      </div>
-    </aside>
 
-    <!-- RIGHT CONTENT -->
-    <main class="content">
-      <section class="section">
+        <div class="side-meta">
+          <div class="meta-row">Cupertino, CA</div>
+        </div>
+
+        <div class="side-links">
+          <a href="mailto:deokhwa@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/deokhwajeong" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </aside>
+
+      <!-- Right content -->
+      <section class="content">
         <h1>About me</h1>
+
         <ul class="bullets">
           <li>
-            I am an embedded/software engineer and technical project manager with 10+ years of experience building and operating large-scale Smart TV platforms at
-            <a href="https://www.lg.com" target="_blank" rel="noopener">LG Electronics</a>.
+            I’m an embedded/software engineer and technical project manager with 10+ years of experience at LG Electronics,
+            working on Smart TV platforms, global OTT integrations, and service operations at scale.
           </li>
           <li>
-            My work has centered on platform delivery, global OTT operations, and translating product, policy, and regional requirements into stable system behavior across 50+ countries.
+            I’ve led cross-functional delivery across engineering, product, legal, and operations, especially in analytics,
+            privacy compliance (e.g., GDPR/CCPA), and global service readiness across 50+ countries.
           </li>
           <li>
-            I have partnered closely with engineering, product, legal, and operations teams, with frequent focus on analytics, privacy compliance (e.g., GDPR/CCPA), and service execution.
+            Earlier in my career, I worked in biological research and built Java-based 3D reconstruction workflows for cellular imaging
+            (TEM/HVEM), which shaped how I think about systems and modeling.
           </li>
           <li>
-            Earlier in my career, I worked in biological research and built Java-based 3D reconstruction tools for cellular imaging using TEM/HVEM and volume rendering workflows.
-          </li>
-          <li>
-            I am preparing to begin the Carnegie Mellon University College of Engineering MSSM program to strengthen my foundation in software systems, technical leadership, and product decision-making.
+            I’m entering Carnegie Mellon University’s M.S. in Software Management (MSSM) program to strengthen software systems foundations,
+            product decision-making, and technical leadership.
           </li>
         </ul>
-      </section>
 
-      <section class="section">
-        <h2>What I work on</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Platform &amp; Service Execution</h3>
-            <p>Building reliable, scalable consumer platforms and improving service operations through engineering and process discipline.</p>
-          </div>
-          <div class="card">
-            <h3>Data-Informed Product Decisions</h3>
-            <p>Instrumenting systems, making sense of telemetry, and using evidence to prioritize improvements and reduce operational noise.</p>
-          </div>
-          <div class="card">
-            <h3>Responsible Systems</h3>
-            <p>Privacy-aware product delivery and compliance-minded execution in globally distributed environments.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Quick links</h2>
-        <ul class="plain">
-          <li><a href="/projects.html">Projects</a> (selected work and prototypes)</li>
-          <li><a href="/resume.html">CV / Resume</a> (PDF + highlights)</li>
-          <li><a href="/contact.html">Contact</a></li>
+        <h2 class="section-title">What’s new?</h2>
+        <ul class="bullets">
+          <li><span class="date">(Dec 2025)</span> Launched this personal site on GitHub Pages (About / Projects / Resume / Contact).</li>
+          <li><span class="date">(2025)</span> Completed Stanford “Machine Learning with Graphs (XCS224W)” with perfect project scores.</li>
+          <li><span class="date">(2025)</span> Ongoing: UCSD Extension coursework (Java, Statistics) to formalize CS fundamentals.</li>
         </ul>
-      </section>
 
-      <footer class="footer">
-        <span>© <span id="y"></span> Deokhwa Jeong</span>
-      </footer>
+        <p class="note">
+          For selected work, see <a href="projects.html">Projects</a>. For a PDF resume, see <a href="resume.html">CV / Resume</a>.
+        </p>
+      </section>
     </main>
   </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
