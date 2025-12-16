@@ -1,0 +1,136 @@
+:root{
+  --text:#111;
+  --muted:#666;
+  --link:#0a66c2;
+  --border:#e6e6e6;
+  --bg:#ffffff;
+  --chip:#f5f5f7;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+
+a{color:var(--link); text-decoration:none}
+a:hover{text-decoration:underline}
+
+.container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:28px 18px 56px;
+}
+
+.topnav{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:10px 0 18px;
+  border-bottom:1px solid var(--border);
+  margin-bottom:26px;
+}
+
+.brand{
+  font-weight:700;
+  margin-right:auto;
+}
+
+.nav a{
+  color:var(--muted);
+  padding:8px 10px;
+  border-radius:10px;
+}
+.nav a.active{
+  color:var(--text);
+  background:var(--chip);
+  font-weight:600;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: 270px 1fr;
+  gap:28px;
+}
+
+.card{
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:16px;
+  position:sticky;
+  top:18px;
+  height:fit-content;
+}
+
+.avatar{
+  width:110px;
+  height:110px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#f2f2f2,#dcdcdc);
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:14px;
+}
+
+.avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.h1{
+  font-size:26px;
+  margin:0 0 4px;
+}
+.sub{
+  color:var(--muted);
+  margin:0 0 12px;
+  font-size:14px;
+}
+
+.meta{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:12px;
+  font-size:14px;
+  color:var(--muted);
+}
+.meta span{display:flex; gap:8px; align-items:center}
+
+.main h2{
+  margin:0 0 10px;
+  font-size:22px;
+}
+.main p{margin:0 0 12px}
+
+.chips{display:flex; flex-wrap:wrap; gap:8px; margin:10px 0 18px}
+.chip{
+  background:var(--chip);
+  border:1px solid var(--border);
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.item{
+  border-top:1px solid var(--border);
+  padding-top:14px;
+  margin-top:14px;
+}
+.item h3{
+  margin:0 0 6px;
+  font-size:16px;
+}
+.small{color:var(--muted); font-size:14px}
+
+@media (max-width: 860px){
+  .grid{grid-template-columns:1fr}
+  .card{position:relative; top:0}
+}
