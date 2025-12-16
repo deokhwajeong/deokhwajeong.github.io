@@ -2,69 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Deokhwa Jeong</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      max-width: 900px;
-      margin: 48px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
-    }
-    h1 { margin-bottom: 0.2em; }
-    h2 { margin-top: 2em; }
-    .subtitle { color: #555; }
-    a { color: #0a66c2; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 20px; }
-  </style>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <h1>Deokhwa Jeong</h1>
-  <div class="subtitle">
-    Embedded & Software Engineer | Technical Project Manager (PMP)<br/>
-    Cupertino, CA
+  <div class="container">
+    <div class="topnav">
+      <div class="brand">Deokhwa Jeong</div>
+      <div class="nav">
+        <a class="active" href="index.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <aside class="card">
+        <div class="avatar">
+          <!-- Optional: replace with your photo -->
+          <!-- <img src="assets/profile.jpg" alt="Deokhwa Jeong"> -->
+        </div>
+        <div class="h1">Deokhwa Jeong</div>
+        <p class="sub">Embedded & Software Engineer · Technical Project Manager (PMP)</p>
+
+        <div class="chips">
+          <span class="chip">Platform Systems</span>
+          <span class="chip">Data & Privacy</span>
+          <span class="chip">Global OTT</span>
+        </div>
+
+        <div class="meta">
+          <span>📍 Cupertino, CA</span>
+          <span>🔗 <a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/">LinkedIn</a></span>
+          <span>💻 <a href="https://github.com/deokhwajeong">GitHub</a></span>
+        </div>
+      </aside>
+
+      <main class="main">
+        <h2>About</h2>
+        <p>
+          I build and operate software systems where reliability, scale, and real-world constraints matter.
+          Over 10+ years at LG Electronics, I worked across Smart TV platforms and global OTT service operations,
+          partnering with major streaming providers and shipping changes across dozens of countries.
+        </p>
+        <p>
+          My current focus is at the intersection of platform execution and responsible data use:
+          turning privacy requirements (e.g., GDPR/CCPA-style constraints) into concrete system behavior,
+          not just policy documents.
+        </p>
+
+        <div class="item">
+          <h3>What I’m optimizing for</h3>
+          <p class="small">
+            Platform / Infra-adjacent roles that require technical depth, disciplined execution, and privacy-aware decision-making.
+            I’m not chasing “PM buzzwords.” I’m chasing ownership of hard systems.
+          </p>
+        </div>
+      </main>
+    </div>
   </div>
-
-  <p>
-    <a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/">LinkedIn</a> ·
-    <a href="https://github.com/deokhwajeong">GitHub</a>
-  </p>
-
-  <h2>About</h2>
-  <p>
-    I am an embedded software engineer and technical project manager with over
-    10 years of experience building and operating large-scale Smart TV platforms
-    and global OTT services. My work spans platform systems, data-driven product
-    execution, and privacy-compliant service operations across 50+ countries.
-  </p>
-
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Household Health Graph Engine</strong><br/>
-      Graph-based system for modeling household health data and generating
-      personalized insights with privacy-aware design.
-    </li>
-    <li>
-      <strong>BioAI Nutrition</strong><br/>
-      AI-driven nutrition platform built with FastAPI, Next.js, and ML pipelines,
-      focusing on personalization and data privacy.
-    </li>
-    <li>
-      <strong>StoryTailor.ai</strong><br/>
-      LLM-powered reading and storytelling platform for children, designed for
-      safe, adaptive, and engaging content delivery.
-    </li>
-  </ul>
-
-  <h2>Contact</h2>
-  <p>
-    Email: deokhwa@gmail.com<br/>
-    LinkedIn: <a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/">deokhwa-j</a>
-  </p>
 </body>
 </html>
+
