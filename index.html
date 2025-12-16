@@ -2,136 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deokhwa Jeong</title>
-  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
 
 <body>
-  <!-- Top header (same vibe as Sejoonoh: name left, tabs right) -->
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="brand" href="./">Deokhwa Jeong</a>
-      <nav class="topnav" aria-label="Primary">
-        <a class="navlink active" href="./">About</a>
-        <a class="navlink" href="./projects.html">Projects</a>
-        <a class="navlink" href="./resume.html">CV / Resume</a>
-        <a class="navlink" href="./contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Page layout -->
-  <main class="layout">
+  <div class="page">
     <!-- LEFT SIDEBAR -->
     <aside class="sidebar">
-      <div class="avatar-wrap">
-        <!-- 1) 여기 사진 파일 경로만 맞추면 됨: /assets/profile.jpg -->
-        <img class="avatar" src="./assets/profile.jpg" alt="Deokhwa Jeong" />
+      <div class="brand">
+        <a class="brand-name" href="/index.html">Deokhwa Jeong</a>
+        <nav class="topnav" aria-label="Primary">
+          <a class="navlink active" href="/index.html">About</a>
+          <a class="navlink" href="/projects.html">Projects</a>
+          <a class="navlink" href="/resume.html">CV / Resume</a>
+          <a class="navlink" href="/contact.html">Contact</a>
+        </nav>
       </div>
 
-      <div class="side-name">Deokhwa Jeong</div>
-      <div class="side-role">Embedded &amp; Software Engineer,<br/>Technical Project Manager (PMP)</div>
-
-      <div class="side-meta">
-        <div class="meta-row">
-          <span class="meta-icon" aria-hidden="true">📍</span>
-          <span>Cupertino, CA</span>
+      <div class="profile">
+        <div class="avatar-wrap">
+          <img class="avatar" src="/assets/profile.jpg" alt="Deokhwa Jeong" />
         </div>
-        <div class="meta-row">
-          <span class="meta-icon" aria-hidden="true">🎓</span>
-          <span>Incoming M.S. (MSSM), CMU</span>
-        </div>
-      </div>
 
-      <div class="side-links" aria-label="Profile links">
-        <!-- 너 링크로 바꿔 -->
-        <a class="sidelink" href="mailto:deokhwa@gmail.com">Email</a>
-        <a class="sidelink" href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="sidelink" href="https://github.com/deokhwajeong" target="_blank" rel="noreferrer">GitHub</a>
+        <div class="profile-text">
+          <div class="name">Deokhwa Jeong</div>
+          <div class="role">Embedded &amp; Software Engineer</div>
+          <div class="role">Technical Project Manager (PMP)</div>
+
+          <div class="meta">
+            <div class="meta-item">
+              <span class="meta-ico" aria-hidden="true">📍</span>
+              <span>Cupertino, CA</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-ico" aria-hidden="true">🎓</span>
+              <span>Incoming M.S. (MSSM), CMU</span>
+            </div>
+          </div>
+
+          <div class="linklist">
+            <a href="mailto:deokhwa@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/deokhwajeong" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
       </div>
     </aside>
 
     <!-- RIGHT CONTENT -->
-    <section class="content">
-      <h1 class="h1">About me</h1>
+    <main class="content">
+      <section class="section">
+        <h1>About me</h1>
+        <ul class="bullets">
+          <li>
+            I am an embedded/software engineer and technical project manager with 10+ years of experience building and operating large-scale Smart TV platforms at
+            <a href="https://www.lg.com" target="_blank" rel="noopener">LG Electronics</a>.
+          </li>
+          <li>
+            My work has centered on platform delivery, global OTT operations, and translating product, policy, and regional requirements into stable system behavior across 50+ countries.
+          </li>
+          <li>
+            I have partnered closely with engineering, product, legal, and operations teams, with frequent focus on analytics, privacy compliance (e.g., GDPR/CCPA), and service execution.
+          </li>
+          <li>
+            Earlier in my career, I worked in biological research and built Java-based 3D reconstruction tools for cellular imaging using TEM/HVEM and volume rendering workflows.
+          </li>
+          <li>
+            I am preparing to begin the Carnegie Mellon University College of Engineering MSSM program to strengthen my foundation in software systems, technical leadership, and product decision-making.
+          </li>
+        </ul>
+      </section>
 
-      <!-- Sejoonoh 스타일: bullet + 파란 링크 -->
-      <ul class="bullets">
-        <li>
-          I am an embedded/software engineer and technical project manager with 10+ years of industry experience at
-          <a href="https://www.lg.com" target="_blank" rel="noreferrer">LG Electronics</a>,
-          building and operating large-scale Smart TV platforms and global OTT integrations.
-        </li>
-        <li>
-          My work focused on platform execution, cross-functional delivery, and translating product, policy, and regional requirements into stable system behavior across 50+ countries.
-        </li>
-        <li>
-          I have led and partnered closely with engineering, product, legal, and operations teams, especially in areas involving analytics, privacy compliance (e.g., GDPR/CCPA), and service operations.
-        </li>
-        <li>
-          My early career started in biological research, where I developed Java-based 3D reconstruction tools for cellular imaging using TEM/HVEM and volume rendering workflows.
-        </li>
-        <li>
-          I am preparing to begin the
-          <a href="https://www.cmu.edu/" target="_blank" rel="noreferrer">Carnegie Mellon University</a>
-          <a href="https://engineering.cmu.edu/" target="_blank" rel="noreferrer">College of Engineering</a>
-          MSSM program, strengthening my foundation in software systems, technical leadership, and product decision-making.
-        </li>
-      </ul>
+      <section class="section">
+        <h2>What I work on</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Platform &amp; Service Execution</h3>
+            <p>Building reliable, scalable consumer platforms and improving service operations through engineering and process discipline.</p>
+          </div>
+          <div class="card">
+            <h3>Data-Informed Product Decisions</h3>
+            <p>Instrumenting systems, making sense of telemetry, and using evidence to prioritize improvements and reduce operational noise.</p>
+          </div>
+          <div class="card">
+            <h3>Responsible Systems</h3>
+            <p>Privacy-aware product delivery and compliance-minded execution in globally distributed environments.</p>
+          </div>
+        </div>
+      </section>
 
-      <h2 class="h2">What I work on</h2>
-      <div class="cards">
-        <article class="card">
-          <div class="card-title">Smart TV platforms (LG Electronics)</div>
-          <div class="card-body">
-            Platform delivery, global OTT service operations, data-informed UX improvements, and privacy/compliance implementation at scale.
-          </div>
-          <div class="card-links">
-            <!-- 필요하면 링크 넣기 -->
-            <a href="./projects.html#lg" class="inline-link">See projects</a>
-          </div>
-        </article>
+      <section class="section">
+        <h2>Quick links</h2>
+        <ul class="plain">
+          <li><a href="/projects.html">Projects</a> (selected work and prototypes)</li>
+          <li><a href="/resume.html">CV / Resume</a> (PDF + highlights)</li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </section>
 
-        <article class="card">
-          <div class="card-title">AI + data-driven personal projects</div>
-          <div class="card-body">
-            Side projects exploring data pipelines, lightweight ML prototypes, and product-oriented engineering.
-          </div>
-          <div class="card-links">
-            <a href="./projects.html#personal" class="inline-link">See projects</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-title">Engineering × product execution</div>
-          <div class="card-body">
-            I’m interested in roles that sit at the intersection of engineering execution, data-informed decision making, and responsible system design.
-          </div>
-          <div class="card-links">
-            <a href="./contact.html" class="inline-link">Get in touch</a>
-          </div>
-        </article>
-      </div>
-
-      <h2 class="h2">Quick links</h2>
-      <ul class="bullets">
-        <li><a class="inline-link" href="./projects.html">Projects</a></li>
-        <li>
-          <a class="inline-link" href="./resume.html">CV / Resume</a>
-          <span class="muted">(PDF link will appear once you upload it under /assets/)</span>
-        </li>
-        <li><a class="inline-link" href="./contact.html">Contact</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <!-- Small footer -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <span class="muted">© <span id="y"></span> Deokhwa Jeong</span>
-    </div>
-  </footer>
+      <footer class="footer">
+        <span>© <span id="y"></span> Deokhwa Jeong</span>
+      </footer>
+    </main>
+  </div>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
