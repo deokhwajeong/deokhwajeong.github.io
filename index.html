@@ -2,110 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Deokhwa Jeong</title>
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <h1>Deokhwa Jeong</h1>
-      <p class="subtitle">
-        Software Engineer & Technical Project Manager
-      </p>
-
-      <nav class="nav">
-        <a href="index.html" class="active">About</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="site-title">
+        <a href="index.html">Deokhwa Jeong</a>
+      </div>
+      <nav class="site-nav">
+        <a class="active" href="index.html">About</a>
         <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
+        <a href="resume.html">CV / Resume</a>
         <a href="contact.html">Contact</a>
       </nav>
+    </div>
+  </header>
 
-      <div class="sidebar-footer">
-        <p>Cupertino, CA</p>
-        <p>
-          <a href="mailto:deokhwa@gmail.com">Email</a><br/>
-          <a href="https://github.com/deokhwajeong" target="_blank">GitHub</a><br/>
-          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-        </p>
+  <main class="container">
+    <section class="profile">
+      <div class="profile-left">
+        <img src="assets/profile.jpg" alt="Deokhwa Jeong" class="profile-img"/>
+        <div class="profile-meta">
+          <strong>Deokhwa Jeong</strong><br/>
+          Embedded & Software Engineer<br/>
+          Technical Project Manager (PMP)<br/>
+          Cupertino, CA
+        </div>
+        <ul class="profile-links">
+          <li><a href="mailto:deokhwa@gmail.com">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/deokhwajeong" target="_blank">GitHub</a></li>
+        </ul>
       </div>
-    </aside>
 
-    <main class="main">
-      <h2>About me</h2>
-      <ul>
-        <li>
-          I am a software engineer and technical project manager with over 10 years of
-          experience building and operating large-scale Smart TV platforms at LG Electronics.
-        </li>
-        <li>
-          My work has focused on platform execution, global OTT service operations,
-          and translating product, policy, and regional requirements into stable system behavior
-          across more than 50 countries.
-        </li>
-        <li>
-          I have worked closely with cross-functional teams spanning engineering,
-          product, legal, and operations, particularly in areas involving analytics,
-          data usage, and privacy compliance.
-        </li>
-        <li>
-          I am preparing to begin the Master of Science in Software Management (MSSM)
-          program at Carnegie Mellon University, with the goal of strengthening my
-          foundation in software systems, product decision-making, and technical leadership.
-        </li>
-        <li>
-          My current interests center on platform-oriented roles that sit at the
-          intersection of engineering execution, data-informed decision making,
-          and responsible system design.
-        </li>
-      </ul>
+      <div class="profile-right">
+        <h2>About</h2>
 
-      <h2>What I’ve worked on</h2>
-      <ul>
-        <li>
-          <strong>Global Smart TV Platform Operations (LG Electronics)</strong><br/>
-          Supported and led the operation of Smart TV services across 50+ countries,
-          coordinating feature rollouts, issue resolution, and integrations with
-          major OTT partners.
-        </li>
-        <li>
-          <strong>Data & Privacy-Aware Service Execution</strong><br/>
-          Worked on analytics-driven workflows and privacy-related processes,
-          ensuring services aligned with regional regulations and internal
-          compliance standards.
-        </li>
-        <li>
-          <strong>Household Health Graph Engine (Independent Project)</strong><br/>
-          Designed a graph-based schema to model household health data, with an
-          emphasis on structure, constraints, and explainability rather than
-          model novelty.
-        </li>
-        <li>
-          <strong>BioAI Nutrition (Independent Project)</strong><br/>
-          Built a prototype personalized nutrition platform using FastAPI and Next.js,
-          exploring practical system design for handling sensitive user data.
-        </li>
-      </ul>
+        <p>
+          I am an embedded software engineer and technical project manager with over 10 years of industry experience at
+          <a href="https://www.lg.com" target="_blank">LG Electronics</a>, where I worked on large-scale Smart TV platforms,
+          global OTT integrations, and data-driven service operations.
+        </p>
 
-      <h2>Background</h2>
-      <ul>
-        <li>
-          Trained as an embedded and software engineer, with early experience
-          in low-level systems and platform development.
-        </li>
-        <li>
-          Transitioned into technical project management roles, focusing on
-          execution, coordination, and delivery in complex production environments.
-        </li>
-        <li>
-          Currently re-centering my career around software systems and
-          platform-oriented leadership through formal graduate study and
-          independent technical work.
-        </li>
-      </ul>
-    </main>
-  </div>
+        <p>
+          My career began in biological research, where I developed Java-based 3D reconstruction tools for cellular
+          imaging using TEM and HVEM. This early exposure to computational modeling later became the foundation for my
+          transition into software engineering and embedded systems.
+        </p>
+
+        <p>
+          At LG Electronics, I contributed as a software engineer on Smart TV recording systems and later served as a
+          technical project manager, leading cross-functional initiatives across engineering, data analytics, privacy
+          compliance (GDPR/CCPA), and global service operations spanning more than 50 countries.
+        </p>
+
+        <p>
+          I am currently expanding my formal computer science training through graduate-level coursework, including
+          <a href="https://cs50.harvard.edu/x/" target="_blank">Harvard CS50x</a>,
+          <a href="https://online.stanford.edu/courses/xcs224w-machine-learning-graphs" target="_blank">
+            Stanford’s Machine Learning with Graphs (XCS224W)
+          </a>,
+          and UC San Diego Extension courses in Java and Statistics.
+        </p>
+
+        <p>
+          My technical interests sit at the intersection of software systems, data, and applied machine learning,
+          with a practical focus on building scalable, privacy-aware platforms rather than academic research.
+        </p>
+
+        <h2>What I’m Working On</h2>
+
+        <ul>
+          <li>
+            Developing a personal health and nutrition platform
+            (<a href="https://github.com/deokhwajeong/BioAI-Nutrition" target="_blank">BioAI Nutrition</a>)
+            using FastAPI, Next.js, and ML pipelines.
+          </li>
+          <li>
+            Building graph-based data models for household health insights
+            (<a href="https://github.com/deokhwajeong/family-health-graph-engine" target="_blank">Family Health Graph Engine</a>).
+          </li>
+          <li>
+            Strengthening CS fundamentals in systems, data structures, and applied ML to support long-term product
+            and platform leadership roles.
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      © 2025 Deokhwa Jeong
+    </div>
+  </footer>
 </body>
 </html>
 
