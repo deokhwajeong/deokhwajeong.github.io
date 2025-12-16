@@ -5,60 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deokhwa Jeong | About</title>
 
-  <!-- Your site CSS (keep this path if you have assets/style.css) -->
+  <!-- Use the same stylesheet that Projects uses -->
   <link rel="stylesheet" href="assets/style.css" />
-
-  <!-- Fallback styles to ensure About matches Projects layout even if CSS is missing/partial -->
-  <style>
-    :root { --bg: #ffffff; --text: #111827; --muted: #6b7280; --line: #e5e7eb; --card: #ffffff; --chip: #f3f4f6; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: var(--text); background: var(--bg); }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
-    .site-header { border-bottom: 1px solid var(--line); background: var(--bg); }
-    .site-header .inner { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; gap: 16px; }
-    .site-title { font-weight: 700; letter-spacing: 0.2px; }
-    .nav { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-    .nav a { padding: 8px 10px; border-radius: 10px; color: #111827; }
-    .nav a.active { background: #f3f4f6; font-weight: 600; }
-
-    .page { padding: 26px 0 60px; }
-    .layout { display: grid; grid-template-columns: 300px 1fr; gap: 28px; align-items: start; }
-    @media (max-width: 860px) { .layout { grid-template-columns: 1fr; } }
-
-    .card { border: 1px solid var(--line); border-radius: 16px; background: var(--card); padding: 18px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
-    .profile-row { display: flex; gap: 14px; align-items: center; }
-    .avatar { width: 84px; height: 84px; border-radius: 999px; background: #e5e7eb; overflow: hidden; flex: 0 0 auto; display: grid; place-items: center; color: #6b7280; font-size: 12px; }
-    .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .name { font-size: 18px; font-weight: 700; margin: 0; }
-    .role { margin: 6px 0 0; color: var(--muted); font-size: 14px; line-height: 1.35; }
-
-    .meta { margin-top: 14px; color: var(--muted); font-size: 14px; }
-    .meta div { margin: 6px 0; display: flex; gap: 8px; align-items: center; }
-    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-    .chip { font-size: 12px; color: #374151; background: var(--chip); padding: 6px 10px; border-radius: 999px; border: 1px solid var(--line); }
-
-    .linklist { margin-top: 14px; display: flex; flex-direction: column; gap: 10px; }
-    .linklist a { display: inline-flex; gap: 8px; align-items: center; }
-
-    .content h1 { font-size: 28px; margin: 0 0 14px; }
-    .section { margin-top: 18px; }
-    .section h2 { font-size: 16px; margin: 0 0 10px; padding-top: 18px; border-top: 1px solid var(--line); }
-    .section:first-of-type h2 { border-top: none; padding-top: 0; }
-    .bullets { margin: 0; padding-left: 18px; }
-    .bullets li { margin: 10px 0; line-height: 1.6; }
-    .muted { color: var(--muted); }
-    .cta { margin-top: 14px; display: inline-flex; gap: 8px; align-items: center; }
-  </style>
 </head>
 
 <body>
-  <header class="site-header">
+  <!-- Match Projects header/nav style -->
+  <header>
     <div class="container">
-      <div class="inner">
-        <div class="site-title">Deokhwa Jeong</div>
+      <div class="topbar">
+        <div class="brand">Deokhwa Jeong</div>
+
         <nav class="nav" aria-label="Primary">
           <a class="active" href="index.html">About</a>
           <a href="projects.html">Projects</a>
@@ -69,68 +26,55 @@
     </div>
   </header>
 
-  <main class="container page">
-    <div class="layout">
-      <!-- LEFT SIDEBAR -->
-      <aside class="card">
-        <div class="profile-row">
-          <div class="avatar">
-            <!-- If you upload a photo, put it in /assets and replace src below -->
-            <!-- <img src="assets/profile.jpg" alt="Deokhwa Jeong"> -->
-            Photo
+  <main>
+    <div class="container">
+      <div class="grid">
+        <!-- Left column (sidebar) -->
+        <aside class="sidebar">
+          <div class="profile">
+            <div class="avatar">Photo</div>
+
+            <div class="profile-text">
+              <h1 class="name">Deokhwa Jeong</h1>
+              <p class="subtitle">Embedded &amp; Software Engineer<br/>Technical Project Manager (PMP)</p>
+
+              <p class="meta">📍 Cupertino, CA<br/>🎓 Incoming M.S. (MSSM), CMU</p>
+
+              <div class="tags">
+                <span class="tag">Systems</span>
+                <span class="tag">Privacy-aware</span>
+                <span class="tag">Product execution</span>
+              </div>
+
+              <div class="links">
+                <a href="mailto:YOUR_EMAIL@example.com">Email</a>
+                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
           </div>
-          <div>
-            <p class="name">Deokhwa Jeong</p>
-            <p class="role">
-              Embedded &amp; Software Engineer<br />
-              Technical Project Manager (PMP)
-            </p>
-          </div>
-        </div>
+        </aside>
 
-        <div class="meta">
-          <div>📍 <span>Cupertino, CA</span></div>
-          <div>🎓 <span>Incoming M.S. (MSSM), CMU</span></div>
-        </div>
+        <!-- Right column (content) -->
+        <section class="content">
+          <h2>About</h2>
 
-        <div class="chips" aria-label="Focus tags">
-          <span class="chip">Systems</span>
-          <span class="chip">Privacy-aware</span>
-          <span class="chip">Product execution</span>
-        </div>
-
-        <div class="linklist" aria-label="Links">
-          <!-- Replace with your real links -->
-          <a href="mailto:YOUR_EMAIL@example.com">📩 Email</a>
-          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank" rel="noopener">in LinkedIn</a>
-          <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">🐙 GitHub</a>
-        </div>
-      </aside>
-
-      <!-- RIGHT CONTENT -->
-      <section class="content">
-        <h1>About</h1>
-
-        <div class="section">
-          <h2>About me</h2>
-          <ul class="bullets">
+          <h3>About me</h3>
+          <ul>
             <li>I’m an embedded/software engineer and technical project manager with 10+ years of experience at LG Electronics, delivering Smart TV platforms, global OTT integrations, and service operations at scale.</li>
             <li>I’ve led cross-functional delivery across engineering, product, legal, and operations, with focus areas including analytics instrumentation, privacy compliance (e.g., GDPR/CCPA), and global rollout readiness across 50+ countries.</li>
             <li>Earlier in my career, I worked in biological research and built Java-based 3D reconstruction workflows for cellular imaging (TEM/HVEM), which shaped how I think about systems, data, and reproducible pipelines.</li>
             <li>I’m entering Carnegie Mellon University’s M.S. in Software Management (MSSM) program to strengthen software systems foundations, product decision-making, and technical leadership.</li>
           </ul>
 
-          <a class="cta" href="projects.html">See Projects →</a>
-        </div>
+          <p><a href="projects.html">See Projects →</a></p>
 
-        <div class="section">
-          <h2>What’s new</h2>
-          <ul class="bullets">
-            <li><span class="muted">(Dec 2025)</span> Launched this personal site on GitHub Pages (About / Projects / Resume / Contact).</li>
-            <!-- Add more bullets if you want -->
+          <h3>What’s new</h3>
+          <ul>
+            <li><strong>(Dec 2025)</strong> Launched this personal site on GitHub Pages (About / Projects / Resume / Contact).</li>
           </ul>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   </main>
 </body>
