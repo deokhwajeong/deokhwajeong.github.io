@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deokhwa Jeong | About</title>
   <link rel="stylesheet" href="assets/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <div class="container">
@@ -19,10 +20,8 @@
     </div>
 
     <div class="grid">
-      <!-- LEFT: Profile card -->
       <aside class="card">
         <div class="avatar">
-          <!-- Uncomment after you add assets/profile.jpg -->
           <!-- <img src="assets/profile.jpg" alt="Deokhwa Jeong" /> -->
         </div>
 
@@ -33,8 +32,8 @@
         </p>
 
         <div class="meta">
-          <span>📍 <span>Cupertino, CA</span></span>
-          <span>🎓 <span>Incoming M.S. (MSSM), CMU</span></span>
+          <span>📍 Cupertino, CA</span>
+          <span>🎓 Incoming M.S. (MSSM), CMU</span>
         </div>
 
         <div class="chips">
@@ -45,19 +44,17 @@
 
         <div class="item">
           <h3>Links</h3>
-          <p class="small">
-            <a href="mailto:deokhwaj@andrew.cmu.edu">Email</a> ·
-            <a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank" rel="noopener">LinkedIn</a> ·
-            <a href="https://github.com/deokhwajeong" target="_blank" rel="noopener">GitHub</a>
-          </p>
+          <div class="meta">
+            <span><i data-lucide="mail"></i><a href="mailto:deokhwaj@andrew.cmu.edu">Email</a></span>
+            <span><i data-lucide="linkedin"></i><a href="https://www.linkedin.com/in/deokhwa-j-01b6b535b/" target="_blank">LinkedIn</a></span>
+            <span><i data-lucide="github"></i><a href="https://github.com/deokhwajeong" target="_blank">GitHub</a></span>
+          </div>
         </div>
       </aside>
 
-      <!-- RIGHT -->
       <main class="main">
         <h2>About</h2>
 
-        <!-- Identity line (must-have) -->
         <p class="small">
           I build and scale complex systems at the intersection of engineering, data, and product execution.
         </p>
@@ -66,11 +63,11 @@
           <h3>About me</h3>
           <div class="small">
             <ul>
-              <li>I’m an embedded/software engineer and technical project manager with 10+ years of experience delivering Smart TV platforms and global OTT services at LG Electronics.</li>
-              <li>I specialize in taking high-risk, high-complexity systems and turning regulatory, operational, and technical constraints into shippable execution.</li>
-              <li>I’ve led cross-functional delivery across engineering, product, legal, and operations, supporting Smart TV services deployed across 53 countries.</li>
-              <li>Earlier in my career, I worked in biological research and built Java-based 3D reconstruction workflows for cellular imaging (TEM/HVEM), which shaped how I think about systems, data integrity, and reproducibility.</li>
-              <li>I’m entering Carnegie Mellon University’s M.S. in Software Management (MSSM) to formalize what I’ve practiced in industry: systems thinking, technical leadership, and execution at scale.</li>
+              <li>Embedded/software engineer and technical project manager with 10+ years delivering Smart TV platforms and global OTT services at LG Electronics.</li>
+              <li>Specialized in translating regulatory, operational, and technical constraints into shippable execution.</li>
+              <li>Led cross-functional delivery across engineering, product, legal, and operations for services deployed in 53 countries.</li>
+              <li>Background in biological research with Java-based 3D reconstruction workflows for cellular imaging (TEM/HVEM).</li>
+              <li>Incoming CMU M.S. in Software Management (MSSM) to formalize systems thinking and technical leadership.</li>
             </ul>
           </div>
         </div>
@@ -79,9 +76,9 @@
           <h3>What I focus on</h3>
           <div class="small">
             <ul>
-              <li>Systems over features — I care about how things scale, fail, and recover.</li>
-              <li>Execution under constraints — privacy, regulation, legacy platforms, and real users.</li>
-              <li>Bridging gaps — translating between engineers, product leaders, and non-technical stakeholders.</li>
+              <li>Systems over features.</li>
+              <li>Execution under constraints.</li>
+              <li>Bridging engineers, product, and non-technical stakeholders.</li>
             </ul>
           </div>
         </div>
@@ -93,5 +90,7 @@
       </main>
     </div>
   </div>
+
+  <script>lucide.createIcons();</script>
 </body>
 </html>
