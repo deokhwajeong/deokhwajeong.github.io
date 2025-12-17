@@ -149,3 +149,10 @@ a:hover{text-decoration:underline}
   .grid{grid-template-columns:1fr}
   .card{position:relative; top:0}
 }
+
+/* Prevent long lines from looking "cut off" */
+.small, .small li, .small p{
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
