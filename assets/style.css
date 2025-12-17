@@ -101,7 +101,11 @@ a:hover{text-decoration:underline}
   font-size:14px;
   color:var(--muted);
 }
-.meta span{display:flex; gap:8px; align-items:center}
+.meta span{
+  display:flex;
+  gap:8px;
+  align-items:center;
+}
 
 .main h2{
   margin:0 0 10px;
@@ -129,6 +133,16 @@ a:hover{text-decoration:underline}
   font-size:16px;
 }
 .small{color:var(--muted); font-size:14px}
+
+.small ul{margin:0; padding-left:18px}
+.small li{margin:10px 0}
+
+/* Lucide icon tuning */
+.meta i{
+  width:16px;
+  height:16px;
+  stroke-width:1.8;
+}
 
 @media (max-width: 860px){
   .grid{grid-template-columns:1fr}
