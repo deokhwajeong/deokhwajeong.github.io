@@ -156,3 +156,23 @@ a:hover{text-decoration:underline}
   word-break:break-word;
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topnav .nav a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .avatar img {
+    max-width: 140px;
+    margin: 0 auto;
+  }
+}
+
