@@ -156,3 +156,8 @@ a:hover{text-decoration:underline}
   word-break:break-word;
 }
 
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
